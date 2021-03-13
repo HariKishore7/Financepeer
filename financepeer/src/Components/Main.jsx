@@ -49,7 +49,7 @@ function Main(){
                     <div>
                         <input id="files" type="file" onChange={fileValidation}></input>
                         <button type="submit" onClick={submitFile} className="btn btn-dark btn-lg btn-block">Submit FIle</button>
-                        <button type="submit" onClick={showData} className="btn btn-dark btn-lg btn-block">Show Data</button>
+                        <button type="submit" onClick={showData} className="btn btn-dark btn-lg btn-block">Show File Data</button>
                     </div>
                     ):(
                         <showJsonData jsonData/>
