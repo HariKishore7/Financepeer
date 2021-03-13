@@ -19,7 +19,7 @@ function Main(){
         }       
     }
     function submitFile(e){
-        axios.post("/fileUpload",newFile,{
+        axios.post("http://localhost:9999/fileUpload",newFile,{
             headers: {
                 'Content-Type': 'multipart/form-data'
             }
@@ -29,7 +29,7 @@ function Main(){
 
 
     function showData(){
-       axios.get('/fileData',{
+       axios.get('http://localhost:9999/fileData',{
             headers: {
                 'Content-Type': 'multipart/form-data'
             }
