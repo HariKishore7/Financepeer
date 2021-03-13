@@ -15,11 +15,6 @@ function Login() {
         e.preventDefault();
         let pass = localStorage.getItem("password").replace(/"/g,"");
         let mail = localStorage.getItem("email").replace(/"/g,"");
-        // .replace(/"/g,"") is used to remove the double quotes for the string
-        console.log("password: "+pass);
-        console.log("mail: "+mail);
-        console.log("email: "+email);
-        console.log("epass: "+password);
 
         if (!email || !password) {
             setFlag(true);
